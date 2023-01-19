@@ -12,7 +12,7 @@ titolo e paragrafo
 -------------------- */
 .word-content{
     text-align: center;
-    max-width: 800px;
+    max-width: 900px;
     margin: 40px auto;
 }
 
@@ -21,3 +21,49 @@ titolo e paragrafo
     padding-bottom: 40px;
 }
 
+/* -----------------
+floating pictures
+-------------------- */
+
+.container{
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.box{
+    background-color: rgb(4, 15, 38);
+    width: calc(100% / 3 - 40px); 
+    float: left;
+    margin: 20px;
+}
+.clearfix::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.box-image{
+    float: left;
+    width: 30%;
+}
+
+.box-text{
+    float: left;
+    width: 70%;
+    text-align: left;
+}
+
+.img{
+    width: 100%;
+    display: block;
+}
+
+.text{
+    color: aliceblue;
+    font-size: small;
+}
+
+.link{
+    color: rgb(0, 179, 255);
+}
